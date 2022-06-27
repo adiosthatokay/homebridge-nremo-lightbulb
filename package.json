@@ -1,16 +1,16 @@
 {
-  "name": "homebridge-nremo",
+  "name": "homebridge-nremo-lightbulb",
   "keywords": [
     "homebridge-plugin"
   ],
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Nature Remo Plugin for homebridge",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "nillpo"
+    "name": "adiosthatokay"
   },
   "license": "ISC",
   "engines": {
@@ -19,9 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nillpo/homebridge-nremo.git"
+    "url": "https://github.com/adiosthatokay/homebridge-nremo-lightbulb.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "await-semaphore": "^0.1.3"
+  },
   "devDependencies": {
     "eslint": "^4.10.0",
     "eslint-plugin-node": "^5.2.1",

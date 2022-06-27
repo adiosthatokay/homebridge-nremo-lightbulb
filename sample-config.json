@@ -19,45 +19,18 @@
       "timeout": 2000,
       "retry_interval": 500,
       "retry": 3,
-      "on": { "format": "us", "freq": 38, "data": [] },
-      "off": { "format": "us", "freq": 38, "data": [] },
-      "command_order": [{ "on": ["on"] }, { "off": ["off"] }]
-    },
-    {
-      "name": "Lamp A",
-      "accessory": "NatureRemo",
-      "host": "Remo-XXXX.local",
-      "path": "/messages",
-      "delayBefore": 1000,
-      "delayAfter": 1000,
-      "timeout": 2000,
-      "retry_interval": 500,
-      "retry": 3,
-      "on": { "format": "us", "freq": 38, "data": [] },
-      "off": { "format": "us", "freq": 38, "data": [] },
-      "command_order": [
-        { "on": ["on", "off", "on", "off"] },
-        { "off": ["on", "off"] }
-      ]
-    },
-    {
-      "name": "Lamp B",
-      "accessory": "NatureRemo",
-      "host": "Remo-XXXX.local",
-      "path": "/messages",
-      "delayBefore": 500,
-      "delayAfter": 800,
-      "timeout": 2000,
-      "retry_interval": 500,
-      "retry": 3,
-      "s_on": { "format": "us", "freq": 38, "data": [] },
-      "s_middle": { "format": "us", "freq": 38, "data": [] },
+      "s_max": { "format": "us", "freq": 38, "data": [] },
+      "s_high": { "format": "us", "freq": 38, "data": [] },
+      "s_low": { "format": "us", "freq": 38, "data": [] },
       "s_off": { "format": "us", "freq": 38, "data": [] },
       "command_order": [
-        { "on": ["s_on", "s_middle", "s_off"] },
+        { "max": ["s_max", "s_high", "s_low"] },
+        { "high": ["s_high"] },
+        { "low": ["s_low"] },
         { "off": ["s_off"] }
       ]
     }
   ],
+
   "platforms": []
 }
