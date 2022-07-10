@@ -11,7 +11,7 @@
   "accessories": [
     {
       "name": "Room Lamp A",
-      "accessory": "NatureRemo",
+      "accessory": "NatureRemoLightBulb",
       "host": "Remo-XXXX.local",
       "path": "/messages",
       "delayBefore": 0,
